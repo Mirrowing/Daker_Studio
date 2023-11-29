@@ -1,0 +1,54 @@
+/* -- Footer container -- */
+.footer {
+    width: 100%;
+    padding: 20px 0px;
+    /* -- */
+    color: #FFF;
+    background: #00607F;
+}
+/* -- Footer Wrapper -- */
+.footer-wrapper {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+    /* -- Copyright -- */
+    .copyright {font-weight: 300;}
+        /* -- */
+        .semibold {font-weight: 600;}
+/* -- Social -- */
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    /* -- Social Icon -- */
+    .social-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+/* -- Bootstrap Phones -- */
+@media screen and (min-width: 320px) {
+    /* -- Copyright -- */
+    .copyright {
+        width: 230px;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+    /* -- Social -- */
+    .social {width: 60%;}
+}
+
+/* -- Boostrap Notebooks -- */
+@media screen and (min-width: 1024px) {
+    /* -- Copyright -- */
+    .copyright {
+        width: 495px;
+        margin: 0px 0px;
+    }
+    /* -- Social -- */
+    .social {
+        width: 15%;
+    }
+}

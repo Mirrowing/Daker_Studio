@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <!-- SEO -->
-        <title>Daker Studio</title>
+        <title>Daker Studio - Marketing Agency</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="robots" content="index, follow">
@@ -33,26 +33,37 @@
                     <img src="img/Logotype.svg" alt="Logotype">
                 </div>
                 <!-- Navigation -->
-                <nav class="navbar">
-                    <a class="header-link" role="link" href="#">Home</a>
-                    <a class="header-link" role="link" href="#">Services</a>
-                    <a class="header-link" role="link" href="#">Pricing</a>
-                    <a class="header-link" role="link" href="#">Policy</a>
-                    <a class="header-link" role="link" href="#">Language</a>
+                <nav class="navbar menu">
+                    <!-- Burger Icon -->
+                    <div class="menu-icon">
+                        <span></span>
+                    </div>
+                    <!-- Menu Body -->
+                    <div class="menu-body">
+                        <!-- Navigation List-->
+                        <ul class="nav-list">
+                            <!-- Navigation Items-->
+                            <li class="nav-item"><a data-goto=".promo" class="header-link" role="link" href="#">Home</a></li>
+                            <li class="nav-item"><a data-goto=".services" class="header-link" role="link" href="#">Services</a></li>
+                            <li class="nav-item"><a data-goto=".pricing" class="header-link" role="link" href="#">Pricing</a></li>
+                            <li class="nav-item"><a class="header-link" role="link" href="#">Policy</a></li>
+                            <li class="nav-item"><a class="header-link" role="link" href="#">Language</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
         <!-- Main container -->
         <main class="main">
             <!-- Section: Promo -->
-            <section class="section" id="Promo">
+            <section class="section promo" id="Promo">
                 <!-- Bounding container -->
                 <div class="wrapper section-wrapper">
                     
                 </div>
             </section>
             <!-- Section: Services -->
-            <section class="section" id="Services">
+            <section class="section services" id="Services">
                 <!-- Bounding container -->
                 <div class="wrapper section-wrapper">
                     <!-- Title container -->
@@ -160,7 +171,7 @@
                 </div>
             </section>
             <!-- Section: Pricing -->
-            <section class="section" id="Pricing">
+            <section class="section pricing" id="Pricing">
                 <!-- Bounding container -->
                 <div class="wrapper section-wrapper">
                     <!-- Title container -->
@@ -268,7 +279,7 @@
                             </form>
 
                             <aside class="bottom">
-                                <form class="">
+                                <form class="check-form">
                                     <input class="" type="checkbox">
                                     <label class="">I give permission to use <span class="semibold">personal data!</span></label>
                                 </form>
@@ -285,9 +296,17 @@
             <div class="wrapper footer-wrapper">
                 <!-- Copyrights -->
                 <p class="copyright"><span class="semibold">"Daker Studio"</span> &copy; 2019-2023. All <span class="semibold">rights</span> reserved.</p>
+                <!-- Social -->
+                <ul class="social">
+                    <li class="social-item"><a class="social-link" role="link" href="#"><img class="social-icon" src="img/Facebook.svg" alt="Facebook"></a></li>
+                    <li class="social-item"><a class="social-link" role="link" href="#"><img class="social-icon" src="img/Instagram.svg" alt="Instagram"></a></li>
+                    <li class="social-item"><a class="social-link" role="link" href="#"><img class="social-icon" src="img/Tiktok.svg" alt="Tiktok"></a></li>
+                    <li class="social-item"><a class="social-link" role="link" href="#"><img class="social-icon" src="img/Linkedin.svg" alt="LinkedIn"></a></li>
+                </ul>
             </div>
         </footer>
         <!-- JavaScript -->
         <script src="js/fade.js"></script>
+        <script src="js/burger.js"></script>
     </body>
 </html>

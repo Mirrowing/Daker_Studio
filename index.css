@@ -1,0 +1,320 @@
+/* -- Font -- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+/* -- ScrollBar -- */
+::-webkit-scrollbar {display: none;}
+/* -- Basic CSS -- */
+* {margin: 0; padding: 0;}
+input, textarea {outline:none}
+ul, li {list-style-type: none;}
+img {width: 100%; object-fit: contain;}
+/* -- Body -- */
+body {
+    width: 100%;
+    height: 100%;
+    /* -- */
+    color: #000;
+    background: #FFF;
+    /* -- */
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    /* -- */
+    position: relative;
+}
+/* -- */
+body.lock {overflow: hidden;}
+/* ---- Technical Classes ---- */
+    /* -- Section -- */
+    .section {
+        width: 100%;
+        /* -- */
+        position: relative;
+    }
+    /* -- Wrapper -- */
+    .wrapper {
+        margin: 0 auto;
+        /* -- */
+        display: flex;
+    }
+    /* -- Section wrapper -- */
+    .section-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* -- Title container -- */
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* -- */
+        position: relative;
+        z-index: 10;
+    }
+    /* -- Title -- */
+    .title {
+        font-size: 1.875rem;
+        font-weight: 600;
+    }
+    /* -- Subtitle -- */
+    .subtitle {
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+    /* -- Content container -- */
+    .content-container {
+        width: 100%;
+        /* -- */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* -- Decoration -- */
+    .decoration {
+        width: 100%;
+        background: #00607F;
+        /* -- */
+        position: absolute;
+        z-index: 5;
+    }
+    /* -- Item icon -- */
+    .item-icon {
+        width: 25px;
+        height: 25px;
+        /* -- */
+        margin-right: 10px;
+    }
+    /* -- Aside: Left -- */
+    .left {
+        width: 60%;
+        height: 100%;
+        /* -- */
+        display: flex;
+        flex-direction: column;
+    }
+    /* -- Aside: Right -- */
+    .right {
+        width: 40%;
+        height: 100%;
+    }
+
+/* ---- Semantic Classes ---- */
+    /* -- Section: Promo -- */
+    #Promo {
+        height: 700px;
+        background-image: url('../img/Promo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* -- Section: Services -- */
+    #Services {background: #F3F3F3;}
+        /* -- Service -- */
+        .service {
+            background: #FFF;
+            /* -- */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            /* -- */
+            transition: all 0.8s ease-out;
+        }
+        /* -- */
+        .service-img {
+            width: 85px;
+            height: 85px;
+            /* -- */
+            border-radius: 50%;
+            /* -- */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* -- */
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            fill: #9D9D9D;
+            /* -- */
+            transition: all 0.8s ease-out;
+        }
+        /* -- */
+        .service-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            /* -- */
+            margin: 15px 0px;
+            /* -- */
+            transition: all 0.8s ease-out;
+        }
+        /* -- */
+        .service-text {
+            width: 270px;
+            text-align: center;
+            /* -- */
+            font-size: 1rem;
+            font-weight: 400;
+            /* -- */
+            transition: all 0.8s ease-out;
+        }
+
+    /* -- Section: Projects -- */
+    .p-background {height: 250px;}
+        /* -- Project -- */
+        .project {
+            background: #F3F3F3;
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+            /* -- */
+            position: relative;
+            z-index: 10;
+        }
+    
+    /* -- Section: Info -- */
+    #Info {background: #F3F3F3;}
+        /* -- */
+        .info-title {
+            font-size: 1.375rem;
+            font-weight: 500;
+        }
+        /* -- */
+        .info-text {
+            font-size: 1.125rem;
+            font-weight: 400;
+            /* -- */
+            margin: 15px 0px;
+        }
+        /* -- */
+        .info-item {
+            margin: 10px 0px;
+            /* -- */
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+    /* -- Section: Pricing -- */
+        /* -- Price -- */
+        .price {
+            background: #F3F3F3;
+            /* -- */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            /* -- */
+            position: relative;
+        }
+        /* -- */
+        .price-background {
+            height: 110px;
+            border-radius: 0px 0px 50px 50px;
+        }
+        /* -- */
+        .price-name {
+            margin: 15px 0px;
+            /* -- */
+            font-size: 1.563rem;
+            font-weight: 600;
+            /* -- */
+            color: #FFF;
+            position: relative;
+            z-index: 10;
+        }
+        /* -- */
+        .price-info {
+            margin: 10px 0px;
+            /* -- */
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            /* -- */
+            color: #FFF;
+            position: relative;
+            z-index: 10;  
+        }
+        /* -- */
+        .price-number {
+            font-size: 1.563rem;
+            font-weight: 400;
+            /* -- */
+            margin-right: 10px;
+        }
+        /* -- */
+        .price-text {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        /* -- */
+        .price-list {margin: 10px 0px;}
+        /* -- */
+        .price-item {
+            margin: 10px 0px;
+            /* -- */
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+
+            /* -- */
+            position: relative;
+            z-index: 10;
+        }
+
+    /* -- Section: Contact -- */
+        /* -- Aside: Top -- */
+        .top {
+            width: 100%;
+            margin: 15px 0px;
+            /* -- */
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+            /* -- */
+            .form-label {
+                display: flex;
+                flex-direction: column;
+            }
+            /* -- */
+            .form-name {
+                font-size: 1rem;
+                font-weight: 400;
+                /* -- */
+                margin-bottom: 10px;
+            }
+            /* -- */
+            .input-label {
+                height: 40px;
+                padding: 5px 10px;
+                /* -- */
+                font-size: 1.125rem;
+                font-weight: 400;
+                /* -- */
+                border: none;
+                background: #F3F3F3;
+                box-shadow: inset 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+            }
+        /* -- */
+        .form-text {width: 100%;}
+            /* -- */
+            .input-text {
+                padding: 5px 10px;
+                /* -- */
+                font-size: 1.125rem;
+                font-weight: 400;
+                /* -- */
+                border: none;
+                background: #F3F3F3;
+                box-shadow: inset 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+            }
+        /* -- */
+        .bottom {
+            width: 100%;
+            margin: 15px 0px;
+            /* -- */
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
